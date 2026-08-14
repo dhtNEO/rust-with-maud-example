@@ -6,8 +6,15 @@ use std::io;
 async fn index() -> AwResult<Markup> {
     Ok(html! {
         html {
+            head {
+                title { "Hello World" }
+            }
             body {
+                header { "Hello World" }
                 h1 { "Hello World!" }
+                p { "Welcome to the Hello World app!" }
+                p { "This is a simple example of a Rust web app using Actix Web and Maud." }
+                footer { "© 2024 Rust Web App" }
             }
         }
     })
